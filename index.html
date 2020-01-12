@@ -7,24 +7,7 @@
  
  <p><input type="text" value="changeme" size="40">
   
-   <p> <label for="redi">Red:</label>
-     <input type="text" id="redi" onchange="changeColor()" value="255" /> <br>
- <p>  <label for="greeni">Green:</label>
-     <input type="text" id="greeni" onchange="changeColor()" value="0" /><br>
-<p>    <label for="bluei">Blue:</label>
-     <input type="text" id="bluei" onchange="changeColor()" value="155" />
-     <br>
-   <p>  <button onclick="changeColor();">Change Color</button>
-
-     <script>
-       changeColor = function() {
-           red = document.querySelector('#redi').value;
-           green = document.querySelector('#greeni').value;
-           blue = document.querySelector('#bluei').value;
-           colorStr = "rgb("+red+","+green+","+blue+")";
-           document.body.style.backgroundColor = colorStr;
-       }
-     </script>
+  
 <style>
 body  {
   background-image: url("download.jpeg");
@@ -44,6 +27,23 @@ wonders are often disputed,
 </p>
 
 </main>
+ <p> <label for="redi">Red:</label>
+     <input type="text" id="redi" onchange="changeColor()" value="255" /> <br>
+ <p>  <label for="greeni">Green:</label>
+     <input type="text" id="greeni" onchange="changeColor()" value="0" /><br>
+<p>    <label for="bluei">Blue:</label>
+     <input type="text" id="bluei" onchange="changeColor()" value="155" />
+     <br>
+   <p>  <button onclick="changeColor();">Change Color</button>
 
+     <script>
+       changeColor = function() {
+           red = document.querySelector('#redi').value;
+           green = document.querySelector('#greeni').value;
+           blue = document.querySelector('#bluei').value;
+           colorStr = "rgb("+red+","+green+","+blue+")";
+           document.body.style.backgroundColor = colorStr;
+       }
+     </script>
 </body>
 </html>
